@@ -64,8 +64,23 @@ public class P538ConvertBstToGreaterTree {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+        // 记录累加和
+        int sum = 0;
         public TreeNode convertBST(TreeNode root) {
-            return null;
+            traverse(root);
+            return root;
+        }
+
+        void traverse(TreeNode root) {
+            if (root == null) {
+                return;
+            }
+            traverse(root.right);
+            // 维护累加和
+            sum += root.val;
+            // 将 BST 转化成累加树
+            root.val = sum;
+            traverse(root.left);
         }
     }
 
