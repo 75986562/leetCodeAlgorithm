@@ -37,6 +37,8 @@
 
 package com.zh.leetcode.editor.cn;
 
+import com.zh.leetcode.bean.TreeNode;
+
 public class P230KthSmallestElementInABst {
     public static void main(String[] args) {
         Solution solution = new P230KthSmallestElementInABst().new Solution();
@@ -86,22 +88,4 @@ public class P230KthSmallestElementInABst {
     }
 
     //leetcode submit region end(Prohibit modification and deletion)
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 }
