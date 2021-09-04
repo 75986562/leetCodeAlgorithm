@@ -1,6 +1,6 @@
 package com.zh.leetcode.bean;
 
-public static class TreeNode {
+public class TreeNode {
     public int val;
     public TreeNode left;
     public TreeNode right;
@@ -8,7 +8,7 @@ public static class TreeNode {
     TreeNode() {
     }
 
-    TreeNode(int val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 

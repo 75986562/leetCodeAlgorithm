@@ -2,7 +2,6 @@ package com.zh.leetcode.utils;
 
 import com.alibaba.fastjson.JSONObject;
 import com.zh.leetcode.bean.TreeNode;
-import lombok.ToString;
 
 public class TreeNodeUtil {
     public static void main(String[] args) {
